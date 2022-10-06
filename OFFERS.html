@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>호텔 오노마</title>
 </head>
@@ -17,60 +17,88 @@
         <div class="header_logo"><a href="#"><img src="images/main_logo.PNG" alt="main로고"></a></div>
         <nav class="main_nav">
             <ul id="gnb">
-                <li> <a href="">ABOUT US</a></li>
-                <li> <a href="">OFFERS</a></li>
-                <li> <a href="">HOME</a></li>
-                <li> <a href="">LOGIN</a></li>
-                <li> <a href="">RESEVAITON</a></li>
+                <li> <a href="/ABOUT US.html">ABOUT US</a></li>
+                <li> <a href="/OFFERS.html">OFFERS</a></li>
+                <li> <a href="/index.html">HOME</a></li>
+                <li> <a href="/LOGIN.html">LOGIN</a></li>
+                <li> <a href="/RESERVATION.html">RESEVAITON</a></li>
             </ul>
         </nav>
     </header>
 </body>
 <section>
-    <h2 class="d-none">Promotion & Package</h2>
+    <div class="container">
+    <h2 class="offers_title">Promotion & Package</h2>
     <div class="promo">
-       <h3>피크닉케이션 패키지</h3>
-       <img src="images/picnication.jpg" alt="">
-       <p>혜택</p>
-       <ul> 사랑스러운 날씨에 소중한 사람들과 함께 즐겨볼 수 있는 피크닉 패키지
-            <li>디럭스 또는 프리미어 객실 1박</li>
-            <li>퍼블릭마켓 기프트 백 1개 제공(박 당)</li>
-            <li>수영장, 피트니스 이용 무료</li>
-            <li>프리미어 객실 투숙시 웰컴드링크 2잔 제공</li>
-       </ul>
+       <p>피크닉케이션 패키지</p>
+        <img src="images/picnication.jpg" alt="">
+        <p class="benefit" >혜택</p>
+            <ul class=""> 사랑스러운 날씨에 소중한 사람들과 함께 즐겨볼 수 있는 피크닉 패키지
+                    <li>디럭스 또는 프리미어 객실 1박</li>
+                    <li>퍼블릭마켓 기프트 백 1개 제공(박 당)</li>
+                    <li>수영장, 피트니스 이용 무료</li>
+                    <li>프리미어 객실 투숙시 웰컴드링크 2잔 제공</li>
+            </ul>
+       <button type="button" class="circle" id="open">자세히 보기</button>
+       <div class="promo_detail pos-absolute d-none">
+       <div id="clsoe" class="pos-absolute">간략히 보기 </div>
+             <div class="detail"> 
+                <p>이용 약관 : <br>
+                이용약관:
+                본 프로모션은 유효 날짜 이내에만 적용되며, 프로모션 적용 기간 내 이용한 투숙에만 해당합니다. 
+                해당 프로모션으로 사용할 수 있는 객실 수는 제한되어 있습니다. 세금은 별도입니다. 
+                10개 이상의 객실을 이용하는 단체 고객은 본 프로모션 이용 대상에서 제외됩니다. 
+                본 프로모션은 기타 프로모션 또는 타 혜택과 중복 적용되지 않으며, 사전 예약 필수입니다. 기타 제한 사항이 적용됩니다. 
+                객실 이용 요금은 객실 수 및 투숙 기간, 예약 시점의 객실 상황에 따라 변동됩니다.</p>
+            </div>
+         </div>          
     </div>
-        <div class="promo_detail">
-            <p>이용 약관 : <br>
-             </p>   
-        </div>
+    </div>
     <div class="package">
-        <h3>오노마 모닝 크릿(ONOMA MORNING TREATS</h3>
-       <img src="images/morning treats.jpg" alt="">
-       <p>혜택</p>
-       <ul> 건강하고 새로운 에너지를 되찾아 줄 수 있는 타운하우스의 아침과 함께 하루를 시작하세요
-        <li>객실 1박</li>     
-        <li>타운하우스 조식 성인 2인</li>
-        <li>오노마 클럽 이용 혜택 : 실내 수영장 및 피트니스 시설</li>
-   </ul>
+        <p>오노마 모닝 크릿(ONOMA MORNING TREATS)</p>
+        <img src="images/morning treats.jpg" alt="">
+          <p class="benefit">혜택</p>
+            <ul class=""> 건강하고 새로운 에너지를 되찾아 줄 수 있는 타운하우스의 아침과 함께 하루를 시작하세요
+                <li>객실 1박</li>     
+                <li>타운하우스 조식 성인 2인</li>
+                <li>오노마 클럽 이용 혜택 : 실내 수영장 및 피트니스 시설</li>
+            </ul>
+   <button type="button" class="circle" id="open">자세히 보기</button>
+   <div class="promo_detail pos-absolute d-none">
+   <div id="clsoe" class="pos-absolute">간략히 보기 </div>
+         <div class="detail"> 
+            <p>이용 약관 : <br>
+            이용약관:
+            본 프로모션은 유효 날짜 이내에만 적용되며, 프로모션 적용 기간 내 이용한 투숙에만 해당합니다. 
+            해당 프로모션으로 사용할 수 있는 객실 수는 제한되어 있습니다. 세금은 별도입니다. 
+            10개 이상의 객실을 이용하는 단체 고객은 본 프로모션 이용 대상에서 제외됩니다. 
+            본 프로모션은 기타 프로모션 또는 타 혜택과 중복 적용되지 않으며, 사전 예약 필수입니다. 기타 제한 사항이 적용됩니다. 
+            객실 이용 요금은 객실 수 및 투숙 기간, 예약 시점의 객실 상황에 따라 변동됩니다.</p>
+        </div>
+     </div>  
     </div>
 </section>
-<article>
+<div id="sidePanel" class="pos-fixed collapsed">
+    <div class="container"> 
+        <header class="side-header">
+            <nav class="side-nav">
+                <ul id="snb">
+                    <li><a href="/index.html">HOME</a></li>                     
+                    <li><a href="/JOIN.html">JOIN</a></li>                   
+                    <li><a href="/LOCATION.html">LOCATION</a></li>                   
+                    <li><a href="/CS.html">CS CENTER</a></li>              
+                </ul>
 
-
-</article>
+    </div>
+</div>
 
 <footer>
-    <div class="footer_top">
-        <a href="">오시는 길</a>
-        <a href="">고객의 소리</a>
-        <a href="">이용약관</a>
-    </div>
-    <div class="footer_mid">
+    <div class="footer_top">   
         <p>호텔 오노마 대전 : 대전광역시 유성구 엑스포로 1 (34126)</p>
         <p>대표 이사 : 박주영 / T.042-259-8007 /</p>
         <p><strong>ONOMA</strong> &copy; 2022.all rights reserved</p>
     </div> 
-    <div class="bottom_logo"> <a href="#"><img src="images/footer_logo.png" alt="footer로고"></a>  </div>
+    <div class="footerlogo"> <a href="#"><img src="images/footer_logo.png" alt="footer로고"></a>  </div>
 
 
 </footer>

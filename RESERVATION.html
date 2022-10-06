@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>호텔 오노마</title>
 </head>
@@ -17,37 +17,77 @@
         <div class="header_logo"><a href="#"><img src="images/main_logo.PNG" alt="main로고"></a></div>
         <nav class="main_nav">
             <ul id="gnb">
-                <li> <a href="">ABOUT US</a></li>
-                <li> <a href="">OFFERS</a></li>
-                <li> <a href="">HOME</a></li>
-                <li> <a href="">LOGIN</a></li>
-                <li> <a href="">RESEVAITON</a></li>
+                <li> <a href="/ABOUT US.html">ABOUT US</a></li>
+                <li> <a href="/OFFERS.html">OFFERS</a></li>
+                <li> <a href="/index.html">HOME</a></li>
+                <li> <a href="/LOGIN.html">LOGIN</a></li>
+                <li> <a href="/RESERVATION.html">RESEVAITON</a></li>
             </ul>
         </nav>
     </header>
-</body>
+
 <section>
-
+    <h2 class="title">Room & Reservation</h2>
+    <p class="title_detail">호텔 오노마 대전 오토그래프 컬렉션은 대전 엑스포타워의 5~7층, 26층~37층, 총 15개층으로 운영됩니다. 
+        건물 27층부터 37층까지 위치한 객실은 13개의 스위트룸을 포함해 총171실입니다.
+        대전시의 멋진 풍광을 담아낸 객실과 스위트는 마음마저 휴식할 수 있는 진정한 오아시스가 되어 드립니다. </p>
+        <ul class="container">
+            <li class="d_twin">
+                <div>
+                    <p>디럭스 트윈</p>
+                </div>
+                    <img src="images/delux_twin.png" alt="">
+                <div>
+                    <p>250,000 KRW~</p>
+                </div>
+            </li>
+            <li class="delux">
+                <div>
+                    <p>비즈니스 디럭스</p>
+                </div>
+                    <img src="images/delux.png" alt="">
+                <div>
+                    <p>350,000 KRW~</p>
+                </div>    
+            </li>
+            <li class="mag_s">
+                <div>
+                    <p>매그놀리아 스위트</p>
+                </div>
+                    <img src="images/mag_s.png" alt="">
+                <div>
+                     <p>480,000 KRW~</p>
+                </div>        
+            </li>
+        </ul>
+    </article>
+    
 </section>
-<article>
+<div id="sidePanel" class="pos-fixed collapsed">
+    <div class="container"> 
+        <header class="side-header">
+            <nav class="side-nav">
+                <ul id="snb">
+                    <li><a href="/index.html">HOME</a></li>                     
+                    <li><a href="/JOIN.html">JOIN</a></li>
+                    <li><a href="/LOCATION.html">LOCATION</a></li>                   
+                    <li><a href="/CS.html">CS CENTER</a></li>              
+                </ul>
 
-
-</article>
+    </div>
+</div>
 
 <footer>
     <div class="footer_top">
-        <a href="">오시는 길</a>
-        <a href="">고객의 소리</a>
-        <a href="">이용약관</a>
-    </div>
-    <div class="footer_mid">
         <p>호텔 오노마 대전 : 대전광역시 유성구 엑스포로 1 (34126)</p>
         <p>대표 이사 : 박주영 / T.042-259-8007 /</p>
         <p><strong>ONOMA</strong> &copy; 2022.all rights reserved</p>
     </div> 
-    <div class="bottom_logo"> <a href="#"><img src="images/footer_logo.png" alt="footer로고"></a>  </div>
-
+    <div class="footer_logo"> <a href="#"><img src="images/footer_logo.png" alt="footer로고"></a>  </div>
+    <div class="top_btn">
+        <a href="#top"><img src="/assets/images/top_btn.svg" alt="top"></a>
+    </div>
 
 </footer>
-
+</body>
 </html>

@@ -26,34 +26,43 @@
         </nav>
     </header>
     <article>
-        <form action="#" method="post" id="login-form">
+        <form action="#" method="post" id="join_form">
             <fieldset>
-                <legend class="skip">로그인 양식</legend> 
+                <legend class="skip">가입 양식</legend> 
                 <ul>
-                    <li class="id">
-                        <span><input type="text" name = "ueser_id" placeholder="멤버십 번호"></span>
+                    <li class="Fist Name">
+                        <span><input type="text" name = "ueser_id" placeholder="이름"></span>
                     </li>
-                    <li class="error id_error">멤버십 번호를 입력해주세요</li>
+                    <li class="Last Name">
+                        <span><input type="text" name = "ueser_id" placeholder="성"></span>
+                    </li>
+                    <li class="Email">
+                        <span><input type="text" name = "ueser_id" placeholder="이메일주소"></span>
+                    </li>
                     <li class="pw">
                         <span><input type="password" name = "ueser_pw" placeholder="비밀번호"></span>
                         <span class="pw_show_hide"></span>
                     </li>
-                    </li>
-                    <li class="error pw_error">비밀번호를  입력해주세요</li>
-                </ul>
+                 <button type="submit" id="join_btn">JOIN</button>
+                 <button type="submit" id="cancel_btn">CANCEL</button>
+                    
+
+
                 <div class="btm">
                   <a href="#"  class="idpw_search">멤버십번호/비밀번호 찾기</a>
                 </div>
-                <button type="submit" id="login_btn">로그인</button>
+                <button type="submit" id="join_btn">로그인</button>
         
             </fieldset>
         </form>
             <a href="#" class="join_link">회원가입</a>
         </article>
+        
 
 <section>
 
 </section>
+
 <div id="sidePanel" class="pos-fixed collapsed">
     <div class="container"> 
         <header class="side-header">
@@ -61,16 +70,15 @@
                 <ul id="snb">
                     <li><a href="/index.html">HOME</a></li>                     
                     <li><a href="/JOIN.html">JOIN</a></li>
-              
+               
                     <li><a href="/LOCATION.html">LOCATION</a></li>                   
                     <li><a href="/CS.html">CS CENTER</a></li>              
                 </ul>
 
     </div>
 </div>
-
 <footer>
-    <div class="footer_top">   
+    <div class="footer_top">     
         <p>호텔 오노마 대전 : 대전광역시 유성구 엑스포로 1 (34126)</p>
         <p>대표 이사 : 박주영 / T.042-259-8007 /</p>
         <p><strong>ONOMA</strong> &copy; 2022.all rights reserved</p>
@@ -79,6 +87,5 @@
 
 
 </footer>
-        
 </body>
 </html>
