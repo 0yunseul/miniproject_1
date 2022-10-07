@@ -22,33 +22,9 @@ $(function () {
         nextSlide.addClass("top")
     } 
 
-   /* window.addEventListener("DOMContentLoaded",function(){
-						
-        const closeBT = document.querySelector("#close");
-        const openBT = document.querySelector("#open");
-        const itemDIV = document.querySelector(".benefit-detail");
-    
-        
-        openBT.addEventListener("click", function(){
-            itemDIV.classList.remove("d-none");
-        });
-        closeBT.addEventListener("click", function(){
-            itemDIV.classList.add("d-none");
-        }); */
+  
 
        
 
-	// const toggleSidePanel = $("#closePanel");
-	// const sidePanel =$("#sidePanel");
-	// const screen = $(".screen")
-    // toggleSidePanel.addEventListener("click",function(){
-	// if(sidePanel.hasClass("collapsed")){
-	// sidePanel.removeClass("collapsed");
-	// creen.removeClass("d-none");
-	// }else {
-	// sidePanel.addClass("collapsed");
-	// screen.addClass("d-none");
-	// }
-	// });
 
 })
