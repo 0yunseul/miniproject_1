@@ -1,0 +1,244 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+:root{
+    --base-text-color : #858585;
+    --primary-color:#2E4650;
+    --base-text-light : #fff;
+
+}
+.d-none {
+    display: none;
+}
+html {
+    font-size: 20px;
+    scroll-behavior: smooth;   
+}
+body {
+    font :0 1rem  'Noto Sans KR', sans-serif;   
+    width: 100%;   
+    }
+
+/*header*/
+.header_top{
+    background-color:var(--primary-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    overflow: hidden;
+    width: 100%;
+   
+}
+.header_logo{
+    display : flex;
+    justify-content: center;
+}
+.main_nav{ 
+justify-content: center;
+margin :auto;
+}
+
+#gnb{
+    overflow: hidden;
+    display: flex;
+    margin-top: 3rem;  
+    padding-left: 0px;
+    justify-content: center;
+}
+
+
+#gnb li {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 150px;
+      
+}
+#gnb li a{
+    color: rgba(255,255,255, 0.6);
+    display: block;
+    font-size: .8rem;
+    justify-content: center;
+}
+#gnb li a:hover {
+    color: #fff;
+}     
+
+/*form*/
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;   
+    margin :auto;
+  }
+
+
+.login-content{ 
+  align-items: center;
+  text-align: center;
+}
+
+
+form{
+  margin: auto; 
+  padding: auto;
+  justify-content: center; 
+  width: 500px;
+}
+
+form h2{
+  text-align: center;
+  margin: 2%;
+  font-size: 3rem;
+  font-weight:bolder;
+  margin-bottom: 5%;
+}
+
+.login-content .input-div{
+  position: relative;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+
+.i{
+  color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.i i{
+  transition: .3s;
+}
+
+.input-div > div{
+  position: relative;
+  height: 45px;
+}
+
+.input-div > div > h5{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  transition: .3s;
+}
+
+.input-div:before, .input-div:after{
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #2E4650;
+  transition: .4s;
+}
+
+.input-div:before{
+  right: 50%;
+}
+
+.input-div:after{
+  left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+  width: 50%;
+}
+
+.input-div.focus > div > h5{
+  top: -5px;
+  font-size: 15px;
+}
+
+.input-div.focus > .i > i{
+  color: #2E4650;
+}
+
+.input-div > div > input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  color: #555;
+  font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass{
+  margin-bottom: 4px;
+}
+
+a{
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: .3s;
+}
+
+a:hover{
+  color:#2E4650;
+}
+
+.btn{
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right,#2E4650, #2E4650,#2E4650);
+  background-size: 200%;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: .5s;
+}
+.btn:hover{
+  background-position: right;
+}
+
+
+
+/*footer*/
+.footer_wrap{    
+    border-top: 1px solid #C5C5C5;
+    display: flex;
+    justify-content :space-between;
+    height: 300px;
+}
+
+.footer_li{
+    float: left;
+    font-size: .7rem;    
+    display: inline-block;  
+}
+.footer_logo img {    
+    width: 300px;
+    height: auto;
+    object-fit: cover;    
+    display: inline-block;
+    margin-right: 30px;
+
+}
+#btn_top{
+    position: fixed;
+    right: 24px;
+    bottom: 20px;
+    z-index: 100; 
+}

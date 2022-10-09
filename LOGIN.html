@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>호텔 오노마</title>
 </head>
 <body>
@@ -26,48 +26,39 @@
         </nav>
     </header>
 <section> 
-        <form action="#" method="post" id="login-form">
-            <fieldset>
-                <legend class="skip">로그인 양식</legend> 
-                <ul>
-                    <li class="id">
-                        <span><input type="text" name = "ueser_id" placeholder="멤버십 번호"></span>
-                    </li>
-                    <li class="error id_error">멤버십 번호를 입력해주세요</li>
-                    <li class="pw">
-                        <span><input type="password" name = "ueser_pw" placeholder="비밀번호"></span>
-                        <span class="pw_show_hide"></span>
-                    </li>
-                    </li>
-                    <li class="error pw_error">비밀번호를  입력해주세요</li>
-                </ul>
-                <div class="btm">
-                  <a href="#"  class="idpw_search">멤버십번호/비밀번호 찾기</a>
-                </div>
-                <button type="submit" id="login_btn">로그인</button>
-        
-            </fieldset>
-        </form>
-            <a href="#" class="join_link">회원가입</a>
-       
-
+ 
+ 
+    <div class="container">
+      
+        <div class="login-content">
+          <form>           
+            <h2>LOGIN</h2>
+                  <div class="input-div one">
+                     <div class="i">
+                        <i class="fas fa-user"></i>
+                     </div>
+                     <div class="div">
+                        <h5>Username</h5>
+                        <input type="text" class="input">
+                     </div>
+                  </div>
+                  <div class="input-div pass">
+                     <div class="i"> 
+                        <i class="fas fa-lock"></i>
+                     </div>
+                     <div class="div">
+                        <h5>Password</h5>
+                        <input type="password" class="input">
+                     </div>
+                  </div>
+                  <a href="#">비밀번호를 잊으셨습니까?</a>
+                  <input type="submit" class="btn" value="Login">
+            </form>
+            
+        </div>
 
 
 </section>
-<div id="sidePanel" class="pos-fixed collapsed">
-    <div class="container"> 
-        <header class="side-header">
-            <nav class="side-nav">
-                <ul id="snb">
-                    <li><a href="/index.html">HOME</a></li>                     
-                    <li><a href="/JOIN.html">JOIN</a></li>
-              
-                    <li><a href="/LOCATION.html">LOCATION</a></li>                   
-                    <li><a href="/CS.html">CS CENTER</a></li>              
-                </ul>
-
-    </div>
-</div>
 
   
 <div class="extras">
@@ -88,6 +79,8 @@
 </ul>    
 
 </footer>
+<script src="script/offers.js">     
+</script>
         
 </body>
 </html>

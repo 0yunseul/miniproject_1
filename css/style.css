@@ -120,7 +120,7 @@ margin :auto;
     margin: 4%;
     justify-content: center;
 }
-.intro p, .title_detail, .res_txt{
+.intro p{
     color: var(--base-text-color);    
     font-size: 1rem;
     text-align: center;
@@ -130,11 +130,12 @@ margin :auto;
 justify-content: center;
 margin-bottom: 5%;
 }
-.branch_title, #loca_h{
+.branch_title, #loca_h, .container_offers p{
     text-align: center;
     font-size: 2rem;
     font-weight: 200;
 }
+
 .branch img{
     width: 520px;
     height: 300px; 
@@ -223,7 +224,7 @@ margin-bottom: 5%;
     margin-top: 3%;
     margin-bottom: 3%;    
 }
-.about h2, .about h3{
+.about h3{
     justify-content: center;
     margin: 3%;
     margin-top: 3%;
@@ -242,27 +243,19 @@ margin-bottom: 5%;
 	width: 100%;
 	object-fit :cover; 
 }
-.about_ono_text{  
-    flex :6;
-    background-color: rgba(255,255,255, 0.6);
-    color: var(--base-text-color);
-    margin-top: 3%;
-    margin-bottom: 20px;
-    font-size: .8rem;
+
+.dining li{ 
+    margin-bottom: 1%;    
+    display: flex; 	
+	justify-content: center;
 }
 .service_1 img, .service_2 img, .service_3 img {
     width: 520px;
     height: 300px;   
 }
-.dining li{ 
-  	margin-bottom: 1%;    
-    display: flex; 	
-	justify-content: center;
-}
-#dining_txt{
-        text-align: center; 
-}
-.service_1 p, .service_2 p, .service_3 p, .res_ser p{   
+.about_ono_text, .service_1 p, .service_2 p, .service_3 p, .res_txt, .title_detail,  .res_ser p,
+.be1,.be2 {   
+    text-align: center; 
     font-size: .8rem;
     margin-top: 3%;
     margin-bottom: 20px;
@@ -280,14 +273,14 @@ margin-bottom: 5%;
 
 #popup img{
     width: 1000px;
-    height: 700px;
+    height: 500px;
 }
 #popup{
     display: none; 
     text-align: center;  
     background-color: #2E4650;
     width: 1000px;
-    height: 780px;
+    height: 580px;
     z-index: 9999; 
     position: fixed;
     top: 52%;
@@ -333,24 +326,14 @@ margin-bottom: 5%;
 }
 
 
-/*offers*/
 
-.offers_title {
-    text-align: center;
-    margin: 2%;
-    font-size: 3rem;
-    font-weight:bolder;
-    margin-bottom: 5%;
-}
+
+
 .promo_wrap img, .package_wrap img{
 height: 400px;
 width: 700px;
 }
-.container_offers p{
-    font-size: 2rem;
-    text-align: center;
-    color: var(--base-text-color);
-}
+
 
 .promo_wrap , .package_wrap{
     display: flex;
@@ -358,38 +341,30 @@ width: 700px;
     position: relative;
     margin-top: 5%;
     margin-bottom: 5%;
+    padding: 3%;
 }
 .txt_box {     
     width: 100%;
-    max-width: 1000px;
-    margin-left: 5%;  
+    max-width: 1000px; 
 }
 .benefit{
-    width: 500px;
+    width: 300px;
     text-align: center;
-    margin-left: 20%;
+    justify-content: center;  
     margin-bottom: 4%;  
+    margin: auto;
     border-radius: 60px;  
     border: 1px solid var(--primary-color);;
-    border-right-width: 10px;
-    border-left-width: 10px;  
-}
-
-.be1, .be2{
-    margin-bottom: 3%;
-}
-
-.benefit-details {
-    display: none;
-    color: var(--base-text-color);
+   
 }
 
 /*reservation*/
-.reservation h2{
+.reservation h2, .about h2, .offers_title{
     text-align: center;
-    margin: 3%;
+    margin: 2%;
     font-size: 3rem;
     font-weight:bolder;
+    margin-bottom: 5%;
 }
 .room {
     margin-bottom: 10%;
@@ -399,9 +374,17 @@ width: 700px;
     height: 300px;
     margin: 5% auto;
 }
+.res img:hover {
+    border: 2px solid #2E4650 ;
+}
 
-
-
+.btns button{
+    background-color:var(--primary-color);;
+    border: none;
+    padding: auto;
+    color: white;
+    
+}
 
 /*footer*/
 .footer_wrap{    
@@ -431,5 +414,6 @@ width: 700px;
     right: 24px;
     bottom: 20px;
     z-index: 100; 
+    scroll-behavior: smooth;   
 
 }
